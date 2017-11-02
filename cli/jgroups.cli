@@ -1,0 +1,4 @@
+/subsystem=jgroups/channel=ee:write-attribute(name=stack,value=tcp)
+/subsystem=jgroups/stack=tcp/protocol=MPING:remove
+/subsystem=jgroups/stack=tcp/protocol=kubernetes.KUBE_PING:add(add-index=0,properties=[namespace=${KUBE_PING_NAMESPACE:keycloak},labels="${KUBE_PING_LABELS:app=keycloak}"])
+

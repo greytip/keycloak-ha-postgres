@@ -1,0 +1,4 @@
+embed-server --server-config=standalone-ha.xml --std-out=echo
+run-batch --file=cli/socket-binding.cli
+run-batch --file=cli/jgroups.cli
+stop-embedded-server
